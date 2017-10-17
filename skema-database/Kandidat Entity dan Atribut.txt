@@ -1,0 +1,11 @@
+- Schedule
+- Activity
+- Transportation Mode
+- Location
+- Location Distance
+- Transportation's Velocity
+- Start Time of Activity
+- End Time of Activity
+- Date of Activity
+- Priority Scale
+- Using what Transportation

@@ -1,0 +1,29 @@
+Entity : 
+- Schedule : Untuk menyimpan data-data schedule yang ada, contoh schedule untuk hari kamis lalu ada schedule untuk minggu
+- Activity : Untuk menyimpan data-data activity yang ada pada satu schedule, Contoh schedule hari kamis memiliki 3 activity yaitu berangkat ke bandara, Meeting di hotel 'X', Kunjungan korban narkoba.
+- Transportation Mode : Untuk menyimpan data kendaraan beserta kecepatan rata-ratanya agar dapat diambil pada saat bagian Add Activity, Contoh Meeting di hotel 'X' pergi menggunakan kendaraan Mobil.
+- Location : Untuk menyimpan data-data lokasi agar nanti dapat dipanggil saat User mengentrikan lokasi awal dan lokasi tujuan, Contoh pada saat user berada di Poasia,Kendari user akan melakukan kunjungan Narkoba yang berada di Labibia,Kendari
+- Distance : Untuk menyimpan data Jarak Antar Lokasi, Contoh Lokasi Awal di Poasia,Kendari Lokasi Tujuan di Labibia,Kendari Jarak Antar kedua lokasi adalah n-Kilometer
+
+Atribut :
+- Schedule Code# : Digunakan untuk membedakan 1 schedule dengan schedule yang lain
+- Date : Digunakan untuk menyimpan Tanggal berlakunya suatu Schedule
+
+- Activity's Code# : Digunakan untuk membedakan 1 Activity dengan yang lainnya, bersifat iteratif.
+- Activity's Name : Digunakan untuk menyimpan nama Activity/Kegiatan.
+- Start Time : Digunakan untuk menyimpan waktu mulai nya suatu activity
+- End Time : Digunakan untuk menyimpan waktu berakhirnya suatu activity
+- Priority Scale : Digunakan untuk menyimpan Skala prioritas dari suatu acitvity
+
+- Transportation Code# : Digunakan untuk membedakan 1 Tranportasi dengan yang lainnya.
+- Tranportation Name : Digunakan untuk menyimpan nama dari sebuah kendaraan.
+- Transportation Velocity : Digunakan untuk menyimpan kecepatan rata - rata dari Transportasi tersebut.
+
+- Distance KM : Digunakan untuk menyimpan data jarak antar lokasi dalam satuan Kilometer
+- Distance M : Digunakan untuk menyimpan data jarak antar lokasi dalam satuan meter, Mandatory karena Jarak Antar lokasi setidaknya berjarak n-Meter, karena ada kemungkinan jarak antar lokasi tidak sampai 1 KM.
+
+- Location ID# : Digunakan untuk membedakan 1 lokasi dengan yang lainnya.
+- Location Name : Digunakan untuk menyimpan nama Dari suatu lokasi, Contoh Nama Lokasi : Rumah Makan Simpang
+- Location Address : Digunakan untuk menyimpan alamat dari lokasi tersebut, Contoh Alamat Lokasi Rumah Makan Simpang: Poasia,Kendari. 
+
+Semua Atribut di CDM ini bersifat Mandatory Kecuali Distance KM karena semua atribut yang ada wajib dimasukan jika dilihat dari Mock-Up dan Use Case yang dibuat, sedangkan Distance KM tidak bersifat wajib karena user bisa saja langsung mengisi jaraknya di Distance M.
